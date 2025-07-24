@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: student-jorge-app
+  name: student-israel-app
   labels:
-    app: student-jorge-app
+    app: student-israel-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: student-jorge-app
+      app: student-israel-app
   template:
     metadata:
       labels:
-        app: student-jorge-app
+        app: student-israel-app
     spec:
       containers:
-        - name: student-jorge-app
-          image: us-central1-docker.pkg.dev/devsecops-lab-464018/student-jorgevalentefragoso/student-jorge-app:latest
+        - name: student-israel-app
+          image: us-central1-docker.pkg.dev/devsecops-lab-464018/student-camerpa/student-israel-app:latest
           ports:
             - containerPort: 3000
           env:
